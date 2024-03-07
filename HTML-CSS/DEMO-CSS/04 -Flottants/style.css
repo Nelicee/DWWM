@@ -1,0 +1,10 @@
+img{
+    float: left;
+    margin-right: 12px;
+}
+p{
+    text-align: justify;
+}
+.reset{
+    clear: both;
+}

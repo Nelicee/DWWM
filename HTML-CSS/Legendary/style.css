@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efe784;
+  margin: auto;
+  width: 67%;
+
+}
+
+.bienvenue {
+  background-image: url(Images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #efe784;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  
+ 
+}
+
+.bienvenue img{
+   position: absolute;
+    border-left: 50%;
+text-align: center;
+}
+.intro {
+  background-color: #3e3838;
+  color: #ada55a;
+  text-align: center;
+}
+.avengers h2 {
+  color: #6cbcb3;
+}
+
+.star {
+  background-color: #6cbcb3;
+}
+
+.woman {
+  background-color: #3e3838;
+}
+.woman h2 {
+  color: #3e3838;
+}
+.img {
+
+}
+Footer {
+  background-color: #282828;
+}
