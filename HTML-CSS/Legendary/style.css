@@ -8,8 +8,14 @@ body {
   background-color: #efe784;
   margin: auto;
   width: 67%;
+  font-family: "Roboto", sans-serif;
 
 }
+header {
+  position: relative;
+}
+
+
 
 .bienvenue {
   background-image: url(Images/header.jpg);
@@ -19,19 +25,62 @@ body {
   background-position: center;
   position: relative;
   height: 400px;
+
   
  
 }
 
 .bienvenue img{
    position: absolute;
-    border-left: 50%;
-text-align: center;
+top: 40px;
+left: 300px;
+}
+
+
+h1{
+position: absolute;
+top: 200px;
+left: 500px;
+letter-spacing: 10px;
+
 }
 .intro {
   background-color: #3e3838;
-  color: #ada55a;
+  color: #efe784;
+  line-height: 30px;
   text-align: center;
+  padding: 50px 300px;
+ 
+}
+ header h2 {
+  
+  border-top:1px solid #ada55a;
+  border-bottom:1px solid #ada55a;
+  display: inline-block;
+  letter-spacing: 10px;
+  direction: rtl;
+  text-indent: -12px;
+  
+
+ }
+p{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+ section{
+  padding-left: 160px ;
+  padding-top: 40px;
+  padding-bottom: 160px;
+  padding-right: 160px;
+ }
+
+ section img{
+  margin-left: 100px;
+  margin-right:100px;
+ }
+.avengers {
+
+  background-color: #fff;
 }
 .avengers h2 {
   color: #6cbcb3;
@@ -47,9 +96,33 @@ text-align: center;
 .woman h2 {
   color: #3e3838;
 }
-.img {
 
-}
 Footer {
   background-color: #282828;
+  padding-left: 50px;
+  color: white;
+  display: relative;  
+}
+span {
+  color: #efe784;
+
+}
+
+footer img{
+
+  position: absolute;
+top: 10px;
+ z-index: 1;
+}
+
+footer div{
+   padding-top: 100px;
+   padding-bottom: 50px;
+
+ 
+}
+
+footer p{
+  padding: 0;
+  margin: 0;
 }
