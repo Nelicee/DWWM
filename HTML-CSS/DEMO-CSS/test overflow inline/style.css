@@ -1,0 +1,23 @@
+div {
+    border: 1px solid black;
+    width: 250px;
+    margin-bottom: 12px;
+  }
+  
+  #div1 {
+    overflow-inline: hidden;
+  }
+  #div2 {
+    overflow-inline: scroll;
+  }
+  #div3 {
+    overflow-inline: visible;
+  }
+  #div4 {
+    overflow-inline: auto;
+  }
+  #div5 {
+    overflow-inline: clip;
+    overflow-clip-margin: 2em;
+  }
+  

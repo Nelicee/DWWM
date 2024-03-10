@@ -1,0 +1,31 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+main{
+    background-color:blue;
+    margin: 50px;
+}
+
+span{
+    background-color:  pink;
+    overflow:hidden;
+    display: inline-block;
+    width: 800px;
+    height:400px;
+    position: relative;
+       vertical-align: middle;
+
+  
+
+}
+img{
+    position: absolute;
+   left: -38px;
+   bottom:-50px;
+
+  
+    
+}
