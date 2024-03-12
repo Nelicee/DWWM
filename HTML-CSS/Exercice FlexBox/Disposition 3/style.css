@@ -29,16 +29,19 @@ header div{
     flex-basis: 48%;
    
 }
+.droite {
+    background-color: grey;
+}
 main{
     flex-basis: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between ;
+    justify-content: space-around ;
 }
 
 nav{
     background-color: orange;
-    flex-basis: 8%;
+    flex-basis: 20%;
     
 }
 
@@ -46,11 +49,11 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-basis:8%;
+    flex-basis:20%;
 }
 
 .photo{
-    background-color:rgb(237, 174, 58);
+    background-color:rgb(237, 109, 58);
     flex-basis: 23%;
 }
 .themes{
@@ -58,14 +61,14 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content:space-between ;
-        flex-basis:8%;
+        flex-basis:20%;
     }
 
 .theme{
         background-color: orange;
         flex-basis:45% ;
     }
-}
+
 footer{
     background-color:green ;
     flex-basis: 10%;

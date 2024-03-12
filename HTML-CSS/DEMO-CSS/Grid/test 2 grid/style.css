@@ -1,0 +1,44 @@
+div{
+    border : 1px dotted blue; 
+}
+
+.grid-container{          
+    display : grid;           
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 300px 400px;
+    gap : 10px 10px;
+    align-items: stretch;
+    justify-items: stretch;
+  
+}
+.item-grid1{
+    background-color:tan;
+}   
+
+/* Commence ici */
+.item-grid2{
+    background-color: red;
+     align-self: start;
+    justify-self: center;
+}
+.item-grid3{
+    background-color:yellow;
+}
+.item-grid4{
+    background-color:lime;
+}
+.item-grid5{
+    background-color:purple;
+}
+.item-grid6{
+    background-color:orange;
+}
+.item-grid7{
+    background-color:cyan;
+}
+.item-grid8{
+    background-color:plum;
+}
+.item-grid9{
+    background-color:peru;
+}

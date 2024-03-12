@@ -1,0 +1,25 @@
+.premiere :nth-child(1){
+    font-size: 30px;
+    color:red;
+}
+
+.premiere :nth-child(3){
+    font-size: 20px;
+    color: green;
+}
+
+.deuxieme :nth-child(1){
+    font-size: 50px;
+    color: violet;
+}
+
+.deuxieme :nth-child(2){
+    font-size: 50px;
+    color: blue;
+}
+
+.premiere p:nth-of-type(1){
+font-weight: bold;
+color:brown;
+font-size: 50px;
+}

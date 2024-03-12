@@ -1,0 +1,12 @@
+.premiere h2 {
+  font-size: 50px;
+  color: green;
+}
+.premiere h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: brown;
+}
+.premiere :nth-last-of-type(3) {
+  color: aqua;
+}
