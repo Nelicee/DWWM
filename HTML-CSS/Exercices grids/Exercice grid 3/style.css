@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-color: black;
+}
+.wrap {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px;
+  display: grid;
+  grid-template: "1 2 3 4" 100px "5 5 5 5" 100px "6 7 8 9" 100px / 100px 100px 100px 100px;
+  gap: 10px;
+}
+.wrap :nth-child(1) {
+  grid-area: 1;
+}
+.wrap :nth-child(2) {
+  grid-area: 2;
+}
+.wrap :nth-child(3) {
+  grid-area: 3;
+}
+.wrap :nth-child(4) {
+  grid-area: 4;
+}
+.wrap :nth-child(5) {
+  grid-area: 5;
+}
+.wrap :nth-child(6) {
+  grid-area: 6;
+}
+.wrap :nth-child(7) {
+  grid-area: 7;
+}
+.wrap :nth-child(8) {
+  grid-area: 8;
+}
+.wrap :nth-child(1),
+.wrap :nth-child(6) {
+  background-color: #8eed8e;
+}
+.wrap :nth-child(2),
+.wrap :nth-child(7) {
+  background-color: #0726a1;
+}
+.wrap :nth-child(3),
+.wrap :nth-child(8) {
+  background-color: #89207d;
+}
+.wrap :nth-child(4),
+.wrap :nth-child(9) {
+  background-color: #dd8564;
+}
+.wrap :nth-child(5) {
+  background-color: #e54949;
+  grid-area: 5;
+}

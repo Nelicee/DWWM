@@ -1,9 +1,9 @@
 .container {
   background-color: whitesmoke;
   display: grid;
-  grid-template-columns: 20% 35% 45%;
+  grid-template-columns: 20% 35% 10%;
   grid-template-rows: repeat(5, 1fr);
-  gap: 2%;
+  gap: 4px;
 }
 .container :nth-child(1) {
   grid-row: 1/3;

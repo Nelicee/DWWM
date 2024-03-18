@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main {
+  background-color: black;
+}
+
+.wrap {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px;
+  display: grid;
+  grid-template:
+    "1 2 3 4" 100px
+    "5 5 5 5" 100px
+    "6 7 8 9" 100px / 100px 100px 100px 100px;
+
+  gap: 10px;
+//   div {
+//     width: 100%;
+//     height: 100%;
+    // align-items: center;
+    // justify-items: center;
+//   }
+
+  :nth-child(1) {
+    grid-area: 1;
+  }
+  :nth-child(2) {
+    grid-area: 2;
+  }
+  :nth-child(3) {
+    grid-area: 3;
+  }
+  :nth-child(4) {
+    grid-area: 4;
+  }
+  :nth-child(5) {
+    grid-area: 5;
+  }
+
+  :nth-child(6) {
+    grid-area: 6;
+  }
+  :nth-child(7) {
+    grid-area: 7;
+  }
+  :nth-child(8) {
+    grid-area: 8;
+  }
+
+  :nth-child(1),
+  :nth-child(6) {
+    background-color: rgb(142, 237, 142);
+  }
+
+  :nth-child(2),
+  :nth-child(7) {
+    background-color: rgb(7, 38, 161);
+  }
+
+  :nth-child(3),
+  :nth-child(8) {
+    background-color: rgb(137, 32, 125);
+  }
+
+  :nth-child(4),
+  :nth-child(9) {
+    background-color: rgb(221, 133, 100);
+  }
+
+  :nth-child(5) {
+    background-color: rgb(229, 73, 73);
+    grid-area: 5;
+  }
+}
