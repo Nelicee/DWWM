@@ -9,15 +9,21 @@
 .wrap {
   background-color: hsl(0, 0%, 100%);
   width: 960px;
+  height:500px;
   padding: 5px;
   display: grid;
   gap: 10px;
   grid-template: "a b c d" 100px 
                  "e e e e" 100px
                  "f g h i" 100px / 100px  100px 100px 100px;
-  
+  justify-content: center;
+  align-content: center;
 }
-
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .box1 {
   grid-area: a;
