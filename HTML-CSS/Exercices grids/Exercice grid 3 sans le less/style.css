@@ -23,6 +23,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+}
+
+span{
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  width: auto;
+  height: auto;
 }
 
 .box1 {
