@@ -56,3 +56,30 @@ main {
   border: 6px solid rgb(13, 13, 184);
   flex-basis: 30% ;
 }
+
+/* MEDIA QUERY  */
+@media screen and (max-width: 400px){
+.container{
+  width: 90vw;
+  height: 90vh;
+  padding:2em;
+}
+main{
+  flex-direction:column;
+  align-items: space-evenly;
+  gap: 1em;
+  width: 100%;
+}
+
+.gauche, .droite{
+  gap:1em;
+}
+
+.rectgauche, .rectgauche{
+  flex-basis: none;
+}
+/* .gauche, .droit{
+ 
+  flex-basis: 90%;
+} */
+}

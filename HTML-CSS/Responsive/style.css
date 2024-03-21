@@ -1,0 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+flex :nth-child(5) {
+  background-color: #9fa8a3;
+}

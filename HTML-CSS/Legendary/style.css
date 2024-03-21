@@ -224,3 +224,26 @@ footer p {
   padding: 0;
   margin: 0;
 }
+
+/* TEST MEDIA QUERY */
+@media screen  and (max-width: 800px) { 
+body{
+  width:100%;
+}
+section {
+  padding: 0;
+
+}
+.intro{
+  padding: 0;
+}
+.RogneImageWoman{
+  height: auto;
+}
+
+section.img{
+  display: none;
+}
+
+
+}

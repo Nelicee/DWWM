@@ -1,0 +1,65 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 75vh;
+  margin: auto;
+  gap: 1rem;
+  color: white;
+  font-size: 2em;
+}
+header,
+footer {
+  background-color: rgb(5, 184, 190);
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+aside {
+  background-color: rgb(96, 225, 96);
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+article {
+  background-color: rgb(222, 167, 65);
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.image {
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+article :nth-child(2) {
+  margin: 1rem;
+}
+article p{
+    align-self: flex-start;
+    position: absolute;
+  
+    
+}
+/* @media screen (max-width: 106px;)
+  {font-size: 0.5em; 
+    
+} */
