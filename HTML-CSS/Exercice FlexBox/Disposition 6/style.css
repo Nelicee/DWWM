@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+.wrapper{
+    width: 50vw;
+    height:50vh;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.left{
+    flex-grow: 2;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.lorem1{
+    background-color: rgb(144, 216, 36);
+    flex-basis: 45%;
+    display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+    
+}
+.lorem2{
+    background-color: rgb(201, 24, 83);
+    flex-basis: 50%;
+}
+.lorem3{
+    background-color: #636161;
+    flex-basis: 55%;
+}
+.lorem4{
+    background-color: #10e2e6;
+    flex-basis: 50%;
+    
+}
+.lorem5{
+    background-color: #f5825c;
+    flex-basis: 15%;
+}
+.lorem6{
+    background-color: #3619ee;
+    flex-grow: 1;
+}
+.middle {
+display: flex;
+flex-direction: row;
+flex-basis: 55%;
+gap: 0.5rem;
+
+}
+
+.twoFour{
+flex-basis: 45%;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+
+}
