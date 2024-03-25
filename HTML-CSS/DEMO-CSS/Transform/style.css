@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  /* transform: rotate(30deg); */
+  /* transform: skew(30deg); */
+  transform: all 2s;
+  transition: all 2s;
+}
+
+.box:hover{
+transform: scale(1.5);
+}
