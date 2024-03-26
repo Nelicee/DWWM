@@ -88,7 +88,9 @@ li {
 h1 {
   font-size: 1.87rem;
 }
-.bienvenue p:not(.button) {
+/* :not(.button) */
+
+.bienvenue p {
   width: 100%;
   padding: 2% 0 2.75% 0;
   font-size: 1.25rem;
@@ -101,7 +103,7 @@ h1 {
   background-color: #849561;
   color: #eed690;
   border: 1px solid white;
-  box-shadow: 0 4px 0px 0.4px rgba(19, 18, 19, 0.5);
+  box-shadow: 0 4px 0px 0.4px rgba(19, 18, 19, 0.2);
 }
 
 /* SECTION 1 EN CE MOMENT */
@@ -126,7 +128,6 @@ h2 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
   gap:  4em 3%;
   color: white;
  
@@ -297,11 +298,68 @@ h2 {
   width:50%;
   
 }
+.bienvenue {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
 .section3 h2{
   padding-bottom: 20%;
 }
-.cards{
-  width: 100%;
+
+
+.allcards{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+ /* align-items:center; */
+ flex-wrap: wrap;
+ margin-top: 7%;
+ gap:10% ;}
+
+ .card{
+  margin-bottom: 10%;
+ }
+.section2 p{
+  width:90%;
+  font-size: 1.37rem;
+ 
+}
+.card-bradley, .card-laura {
+  width: 50%;
+}
+.pic{
+  width: 8.56rem;
+  height: 8.43rem;
+}
+}
+@media screen and (min-width:768px) and (max-width: 1320px){
+  .hero img {
+    width: 50%;
+  }
+  .card{
+  width: 40%;
+  max-width: 300px;
+  margin-bottom: 10%;
+  }
+
+  .allcards{
+    width: 60%;
+    display: flex;
+    /* flex-direction:column;
+  align-items:center; */
+   flex-wrap: wrap;
+   margin: auto;
+   margin-top:8%;
+   gap: 15%;
+
+  
 }
 
+}
+@media screen and (min-width:1320px) {
+  .card{
+    max-width:300px;
+  }
 }
