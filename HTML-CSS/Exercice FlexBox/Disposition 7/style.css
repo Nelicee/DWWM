@@ -2,25 +2,33 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    width: 50vw;
-    height:50vh;
-    margin: auto;
+    /* margin: auto; */
+    
 }
 
 .wrapper{
+    width: 50vw;
+    height: 50vh;
     margin: auto;
     display: flex;
     flex-direction: column;
+
 
 }
 
 header{
     background-color: blue;
+    flex-basis: 10%;
 }
 
 .hero{
     background-color: red;
-}
+    flex-basis: 20%;}
+
+main{
+        flex-basis: 60%;
+    }
+
 .content{
     background-color: green;
 
@@ -29,6 +37,8 @@ header{
     background-color: blueviolet;
 }
 
-.footer{
-    background-color: green;
+footer{
+    background-color: rgb(100, 102, 100);
+    flex-basis: 10%;
 }
+
