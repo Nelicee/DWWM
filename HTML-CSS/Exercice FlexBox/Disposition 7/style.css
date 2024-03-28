@@ -1,44 +1,62 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    /* margin: auto; */
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* margin: auto; */
+  /* Ne pas mettre margin auto dans le * !! La marge s'applique à tous les éléments !! */
 }
 
-.wrapper{
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
-
+.wrapper {
+  width: 50vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  color: white;
 }
 
-header{
-    background-color: blue;
-    flex-basis: 10%;
+header {
+  background-color: blue;
+  flex-basis: 10%;
+  padding-left: 2rem;
+  padding-top:0.2rem;
 }
 
-.hero{
-    background-color: red;
-    flex-basis: 20%;}
-
-main{
-        flex-basis: 60%;
-    }
-
-.content{
-    background-color: green;
-
-}
-.sidebar{
-    background-color: blueviolet;
+.hero {
+  background-color: red;
+  flex-basis: 20%;
+  padding-left: 2rem;
+  padding-top:0.2rem;
+  flex-basis: 20%;
 }
 
-footer{
-    background-color: rgb(100, 102, 100);
-    flex-basis: 10%;
+main {
+  flex-basis: 60%;
 }
 
+.content {
+  background-color: green;
+  flex-basis: 60%;
+  padding-left: 2rem;
+  padding-top:0.2rem;
+}
+.sidebar {
+  background-color: blueviolet;
+  flex-basis: 40%;
+  padding-left: 2rem;
+  padding-top:0.2rem;
+}
+
+footer {
+  background-color: rgb(100, 102, 100);
+  flex-basis: 10%;
+  padding-left: 2rem;
+  padding-top:0.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
