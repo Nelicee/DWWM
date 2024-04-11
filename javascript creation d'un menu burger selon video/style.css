@@ -1,0 +1,95 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+  /* Variables */: root {
+  --font-size: 1rem;
+}
+.light-mode {
+  --navbar-color: #222;
+  --navbar-bg-color: #F0F0FO;
+}
+.dark-mode {
+  --navbar-color: #fff;
+  --navbar-bg-color: #000;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+/* Basic style */
+body {
+  font-size: var(--font-size);
+  font-family: "Poppins", sans-serif;
+}
+main-content {
+  padding: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:65px;
+  padding: 10px;
+  color: var(--navbar-color);
+  background: var(--navbar-bg-color);
+}
+.navbar__links {
+    display: flex;
+}
+.navbar__link {
+    padding: 0 10px;
+}
+.navbar__link > a {
+    text-decoration: none;
+    color:var(--navbar-color)
+}
+.burger{
+    display: none;
+}
+
+/* small devices */
+@media screen and (max-width: 767px) {
+.navbar__links {
+ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right:0;
+    background: var(--navbar-bg-color);
+
+}
+
+}
+/* toggle menu */
+/* bonus -animations */
+
+/* medium devices */
+@media screen and (min-width: 768px) {
+    .navbar__link > a::after{
+        display: block;
+        content:"";
+        width: 0;
+        height: 1px;
+        background:var(--navbar-color);
+        transition:width .4s;
+    }
+    .navbar__link:hover > a::after {
+    width: 100%;
+    margin: auto;
+
+
+    }
+}

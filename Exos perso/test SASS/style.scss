@@ -1,16 +1,28 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-align: right;
-  .navbar__link {
-    font-size: 15px;
-    padding-left: 30px;
-    color: #981111;
+// .navbar {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   text-align: right;
+//   .navbar__link {
+//     font-size: 15px;
+//     padding-left: 30px;
+//     color: #981111;
   
-  &--purple {
-    color: #a5b4fc;
-  }
-}
+//   &--purple {
+//     color: #a5b4fc;
+//   }
+// }
+// }
+
+// section > li { 
+
+//   color: blue; 
+
+// }
+
+section li { 
+
+  color: blue; 
+
 }

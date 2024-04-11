@@ -1,15 +1,3 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-align: right;
-}
-.navbar .navbar__link {
-  font-size: 15px;
-  padding-left: 30px;
-  color: #981111;
-}
-.navbar .navbar__link--purple {
-  color: #a5b4fc;
+section li {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */

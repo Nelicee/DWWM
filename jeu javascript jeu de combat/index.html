@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jeu de combat</title>
+</head>
+
+<body>
+    <section class="startScreen startScreen-Dark">
+        <h1 container__header__titre>les combattants héroïques</h1>
+        <div class="startScreen__buttons">
+            <button class="startButton">Start</button>
+            <button class="tutorialButton">Tutorial</button>
+        </div>
+    </section>
+    <section class=" modalBlackScreen">
+        <div class="modal">
+            <p>instructions Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur magnam,
+                aliquid, quos totam numquam tenetur dolores eius doloremque dolorem, consequatur ad minima quibusdam
+                atque repellendus. Ducimus expedita asperiores eveniet consectetur enim doloribus provident dolore
+                consequatur illo iure, odio eius praesentium architecto tenetur deleniti minima quos. Iusto vero
+                nihil beatae voluptatem a distinctio aliquid, </p>
+
+        </div>
+    </section>
+    <section class="selectCharacters">
+        <div class="charactersPlayer1Player2">
+            <div class=" charactersPlayer1">
+                <div class="player1Choice">
+                    <figure>
+                        <img src="images/personnage1.jpg" alt="chevalier" class="player1Chevalier">
+                        <figcaption class="buttonCharacter">Cliquer sur l'image <br>pour choisir le chevalier
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mage.jpg" alt="mage" class="player1Mage">
+                        <figcaption class="buttonCharacter">cliquer sur l'image <br>pour choisir le mage</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Archer.jpg" alt="archer" class="player1Archer">
+                        <figcaption class="buttonCharacter">cliquer sur l'image <br>pour choisir l'archer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Prêtre.jpg" alt="prêtre" class="player1Pretre">
+                        <figcaption class="buttonCharacter">Cliquer sur l'image <br>pour choisir le prêtre</figcaption>
+                    </figure>
+                </div>
+                <div class="formPlayer1">
+                    <form>
+                        <div class="pseudo1">
+                            <label for="pseudo1">Joueur 1</label>
+                            <input type="text" id="pseudo1" name="pseudo1" placeholder="pseudo du joueur 1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class=" charactersPlayer2">
+                <div class="player2Choice">
+                    <figure>
+                        <img src="images/personnage1.jpg" alt="chevalier" class="player2Chevalier">
+                        <figcaption class="buttonCharacter">Cliquer sur l'image <br>pour choisir le chevalier
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mage.jpg" alt="mage" class="player2Mage">
+                        <figcaption class="buttonCharacter">cliquer sur l'image <br>pour choisir le mage</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Archer.jpg" alt="archer" class="player2Archer">
+                        <figcaption class="buttonCharacter">cliquer sur l'image <br>pour choisir l'archer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Prêtre.jpg" alt="prêtre" class="player2Pretre">
+                        <figcaption class="buttonCharacter">Cliquer sur l'image <br>pour choisir le prêtre</figcaption>
+                    </figure>
+                </div>
+                <div class="formPlayer2">
+                    <form>
+                        <div class="pseudo2">
+                            <label for="pseudo2">Joueur 2</label>
+                            <input type="text" id="pseudo2" name="pseudo2" placeholder="pseudo du joueur 2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button class="startTheGameButton">Start the game</button>
+
+
+    </section>
+    <section class="gameScreen">
+        <h1>LE COMBAT</h1>
+        <div class="battlePlayer1Player2">
+            <div class="battlePlayer1">
+                <h2 class="player1Name">Nom du joueur 1</h2>
+                <p class="namePersonnage1">nom du personnage 1</p>
+                <img src="" class="imgPerso1" alt="">
+                <div>
+                    <p class="PVPlayer1">Points de vie:</p>
+                    <p class="PATKPlayer1">Point d'attaque:</p>
+                </div>
+            <button class="ATKButtonPlayer1">Attaque</button>
+
+                
+            </div>
+            <div class="battlePlayer2">
+                <h2 class="player2Name">Nom du joueur 2</h2>
+                <p class="namePersonnage2">nom du personnage 2</p>
+                <img src="" class="imgPerso2" alt="">
+                <div>
+                    <p class="PVPlayer2">Points de vie:</p>
+                    <p class="PATKPlayer2">Point d'attaque:</p>
+                </div>
+                <button class="ATKButtonPlayer2">Attaque</button>
+            </div>
+    </section>
+
+    <section class="fin">
+
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
