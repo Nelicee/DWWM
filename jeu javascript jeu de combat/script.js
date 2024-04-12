@@ -2,18 +2,38 @@ const startButton = document.querySelector(".startButton")
 const startScreen = document.querySelector(".startScreen")
 const selectCharacters = document.querySelector(".selectCharacters")
 startButton.addEventListener("click", () => {
-    startScreen.style.display = "none"
-    selectCharacters.style.display ="flex"
+   startScreen.style.display = "none"
+   selectCharacters.style.display ="flex"
 })
 
 const tutorialButton = document.querySelector(".tutorialButton")
-const modalBlackScreen = document.querySelector(".modalBlackScreen")
-const modal =document.querySelector(".modal")
+// const modalBlackScreen = document.querySelector(".modalBlackScreen")
+let modal = document.getElementById('myModal');
+// const modal =document.querySelector(".modal")
 tutorialButton.addEventListener("click", () => {
-    modalBlackScreen.style.display = "flex"
-    modal.style.display = "flex"
-    
+   // modalBlackScreen.style.display = "flex"
+   modal.style.display = "flex"
+   
 })
+function openModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
+// Fonction pour fermer le modal
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+// Fermer le modal lorsque l'utilisateur clique en dehors du contenu
+window.onload = function(event) {
+  let modal = document.getElementById('myModal');
+  if (event.target == modal) {
+    modal.style.display = "block";
+  }
+}
+let player1;
+let player2;
+let player1Name;
+let player2Name;
+
 
 
 const imgChevalierP1 = document.querySelector(".player1Chevalier")
@@ -126,11 +146,32 @@ const PVPlayer2 = document.querySelector(".PVPlayer2")
 const ATKButtonPlayer1 = document.querySelector(".ATKButtonPlayer1")
 const ATKButtonPlayer2 = document.querySelector(".ATKButtonPlayer2")
 ATKButtonPlayer1.addEventListener("click", () => {
+   const inputPlayer1 = document.getElementById("pseudo1");
 if (player2.pv <= 0) {
    return
 } else {
-player2.pv = player2.pv - player1.atk;
-PVPlayer2.textContent = "Points de vie: " + player2.pv;
+   player2.pv = player2.pv - player1.atk;
+   PVPlayer2.textContent = "Points de vie: " + player2.pv;
+   ATKButtonPlayer1.disabled = true;
+   ATKButtonPlayer2.disabled = false;
+   if (player2.pv <= 0) {
+      PVPlayer2.textContent = "Points de vie: 0";
+      ATKButtonPlayer2.disabled = true;
+      ATKButtonPlayer1.disabled = true;
+      console.log(inputPlayer1.value + " a gagné");
+      let fincbt = document.querySelector(".End")
+      gameScreen.style.display = "none"
+      fincbt.style.display = "flex"
+   
+   
+// const inputPlayer1Name = document.querySelector(".player1Name");
+// const inputPlayer2Name = document.querySelector(".player2Name");
+
+// winnerBattlePlayer1 = inputPlayer1Name.value;
+// winnerBattlePlayer2= inputPlayer2Name.value;
+// console.log(`Le ${inputPlayer1Name.value} a gagné`)
+
+}
 
 }
 })
@@ -143,6 +184,8 @@ ATKButtonPlayer2.addEventListener("click", () => {
    } else {
       player1.pv = player1.pv - player2.atk;
    PVPlayer1.textContent = "Points de vie: " + player1.pv;
+   ATKButtonPlayer2.disabled = true;
+   ATKButtonPlayer1.disabled = false
    }
    })
 
@@ -154,10 +197,7 @@ ATKButtonPlayer2.addEventListener("click", () => {
 //     gameScreen.style.display= "block"
 //  })
 const sectionBattle = document.querySelector(".gameScreen")
-let player1;
-let player2;
-let player1Name;
-let player2Name
+
 
 let tab = [
    {
@@ -188,15 +228,15 @@ let tab = [
 
 let currentPlayer = player1; // On commence par le joueur 1
 
-ATKButtonPlayer1.addEventListener("click", () => {
-    if (currentPlayer === player1) {
-        if (player2.pv > 0) {
-            player2.pv -= player1.atk;
-            PVPlayer2.textContent = "Points de vie: " + player2.pv;
-            currentPlayer = player2; // Passer au joueur 2
-        }
-    }
-});
+// ATKButtonPlayer1.addEventListener("click", () => {
+//     if (currentPlayer === player1) {
+//         if (player2.pv > 0) {
+//             player2.pv -= player1.atk;
+//             PVPlayer2.textContent = "Points de vie: " + player2.pv;
+//             currentPlayer = player2; // Passer au joueur 2
+//         }
+//     }
+// });
 
 ATKButtonPlayer2.addEventListener("click", () => {
     if (currentPlayer === player2) {
@@ -207,3 +247,23 @@ ATKButtonPlayer2.addEventListener("click", () => {
         }
     }
 });
+
+// // Fonction pour ouvrir le modal
+// function openEnd() {
+//    document.getElementById('myEnd').style.display = 'block';
+//  }
+//  // Fonction pour fermer le modal
+//  function closeModal() {
+//    document.getElementById('myEnd').style.display = 'none';
+//  }
+//  // Fermer le modal lorsque l'utilisateur clique en dehors du contenu
+//  window.onload = function(event) {
+//    var End = document.getElementById('myEnd');
+//    if (event.target == End) {
+//      End.style.display = "none";
+//    }
+//  }
+
+ // Fonction pour ouvrir le modal
+
+ 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +7,7 @@
 
 body {
   font-family: "MedievalSharp", cursive;
+  background: rgba(147, 95, 10, 0.668);
 }
 
 .startScreen {
@@ -91,13 +93,13 @@ body {
 
 img {
   width: 13rem;
-  height: 80%;
+  height: 75%;
 }
 
 .charactersPlayer2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   gap: 3%;
 }
 
@@ -106,6 +108,12 @@ img {
   display: flex;
   flex-direction: row;
   gap: 4px;
+}
+
+.pseudo1, .pseudo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .startTheGameButton {
@@ -157,4 +165,58 @@ img {
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+#endBattle {
+  display: none;
+}
+
+/* Style pour le modal */
+.End {
+  display: none; /* Par défaut, le modal est caché */
+  position: fixed; /* Positionnement fixe pour couvrir toute la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour le contenu du modal */
+.End-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* Centrer le modal verticalement et horizontalement */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Largeur maximale du modal */
+  font-size: 22px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Style pour le modal */
+.modal {
+  display: none; /* Par défaut, le modal est caché */
+  position: fixed; /* Positionnement fixe pour couvrir toute la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour le contenu du modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* Centrer le modal verticalement et horizontalement */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Largeur maximale du modal */
+  font-size: 22px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */
