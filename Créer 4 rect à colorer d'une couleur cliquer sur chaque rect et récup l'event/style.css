@@ -1,0 +1,35 @@
+
+body {
+    display: flex;  
+    gap: 10%;
+}
+
+.rect {
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+
+}
+
+.rectangle1{
+
+    background-color: aqua;
+}
+
+
+.rectangle2{
+
+    background-color: rgb(97, 7, 114);
+}
+
+
+.rectangle3{
+
+    background-color: rgb(86, 236, 53);
+}
+
+
+.rectangle4{
+
+    background-color: rgb(246, 17, 28);
+}
