@@ -147,4 +147,24 @@
 // $c =$a ?? $b ?? "inconnue";
 // echo $c;
 
+//Boucle while -Tant que
 
+// $i = 5;
+// while($i < 9){
+//     echo  "coucou \n";
+//     $i++; 
+// }
+
+
+
+// $compteur = 1;
+
+// do {
+// echo "Le compteur est : " . $compteur . "\n";
+// $compteur++;
+// } while ($compteur <= 5);
+
+
+for ($i = 1; $i <= 10; $i++) {
+    echo $i . " ";
+}
