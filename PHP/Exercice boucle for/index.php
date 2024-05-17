@@ -52,17 +52,66 @@
 // 28
 
 
-// saisie = readline("Saisir un nombre : ");
-// echo $saisie."\n";
-// $saisie =$saisie +5;
-// echo $saisie;
 
-$nombre_entier = readline("Veuillez saisir un nombre entier : ");
-echo "les 5 nombres suivants sont: ";
-for ($i = 1; $i <= 5; $i++) {
-    echo ($nombre_entier + $i ). "\n";
-}
-echo "Les 5 nombres précédents sont: ";
- for ($i = 5; $i >=1; $i--) {
-    echo (($nombre_entier) - $i ). "\n";
-}
+// $nombre_entier = readline("Veuillez saisir un nombre entier : ");
+// echo "les 5 nombres suivants sont: ". "\n";
+// for ($i = 1; $i <= 5; $i++) {
+//     echo ($nombre_entier + $i ). "\n";
+// }
+// echo "Les 5 nombres précédents sont: ". "\n";
+//  for ($i = 1; $i <= 5; $i++) {
+//     echo ($nombre_entier - $i ). "\n";
+// }
+
+// 3°) Écrire un programme qui demande un nombre a l'utilisateur et calcul sa factorielle
+
+// La factorielle de 8, notée 8 ! vaut : 1 * 2* 3 * 4 * 5 * 6 * 7 * 8 = 40320
+
+// entrez un nombre : 8
+// La factorielle de 8 vaut : 40320
+
+
+// $nombre = readline("Veuillez saisir un nombre entier et nous allons calculer sa factorielle : ");
+// $nombre_decremente = $nombre -1 ;
+// for ($i = 1 ; $i <= ($nombre && $i != 0; $i++)){
+// echo $nombre *= ($nombre - $nombre_decremente);
+// }
+// echo "$nombre";
+
+
+
+// // Demande a l'utilisateur de saisir un nombre
+// $nombre = readline("Veuillez saisir un nombre entier et nous allons calculer sa factorielle : ");
+
+// // Initialisation du résultat à 1
+// $resultat = 1;
+
+// // Calcul de la factorielle en utilisant une boucle for
+// for ($i = 1; $i <= $nombre; $i++) {
+// $resultat *= $i;
+
+// // Affiche le résultat
+// echo "La factorielle de $nombre vaut : $resultat\n";
+// }
+
+$num = readline("nombre : ");   
+$fac = 1;
+for ( $i = 1 ; $i <= $num ; $i++ ) {  
+    $fac = $i * $fac;
+}  
+echo $fac;  
+
+
+// 4°) Écrire un programme qui permet de saisir 5 nombres entiers et d’afficher le plus grand nombre à 
+// la fin et le plus petit.
+
+$nombreEntier1 = readline("Merci de donner un premier nombre entier");
+$nombreEntier1 = readline("Merci de donner un deuxieme nombre entier");
+$nombreEntier1 = readline("Merci de donner un troisieme nombre entier");
+$nombreEntier1 = readline("Merci de donner un quatrième nombre entier");
+$nombreEntier1 = readline("Merci de donner un cinquième nombre entier");
+
+For(;i>y ;){
+    
+};
+
