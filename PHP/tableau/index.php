@@ -3,7 +3,7 @@
 // 1°) Écrire un programme qui déclare un tableau de 9 notes, dont on fait ensuite saisir les valeurs par 
 // utilisateurs.
 // Calculez la moyenne des notes
-$total =0;
+$total = 0;
 $notes = [];
 for($i=1;$i<10;$i++){
    $saisie = readline("Merci de saisir une note numéro $i ");

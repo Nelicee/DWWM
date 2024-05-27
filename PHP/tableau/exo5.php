@@ -8,9 +8,9 @@
 $tab = [];
 $NbreplusGrand = NULL;
 $Position;
-$nombre = readline("Merci de me donner le nombre de valeurs que vous comptez saisir ");
+$nombre = readline("Merci de me donner le nombre de valeurs que vous comptez saisir : ");
 for ($i = 1; $i <= $nombre; $i++) {
-    $saisie = readline("Merci de saisir votre nombre $i ");
+    $saisie = readline("Merci de saisir votre nombre $i : ");
     $tab[] = $saisie;
    
         if ($saisie > $NbreplusGrand || $NbreplusGrand == Null) {

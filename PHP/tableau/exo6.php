@@ -8,7 +8,7 @@ $notes = [];
 $nbreEleves = readline("Merci de saisir le nombre d'élèves :");
 $NbreSupMoyenne = 0;
 for ($i = 1; $i <= $nbreEleves; $i++) {
-    $saisie = readline("Merci de saisir une note numéro $i ");
+    $saisie = readline("Merci de saisir la note numéro $i ");
     $notes[] = $saisie;
 }
 

@@ -6,21 +6,21 @@
 
 
 $tab = [];
-$nombre = readline("Merci de me donner le nombre de valeurs que vous comptez saisir ");
-for ($i=0; $i <$nombre  ; $i++) { 
+$nombre = readline("Merci de me donner le nombre de valeurs que vous comptez saisir :");
+for ($i = 1; $i <= $nombre; $i++) {
     $saisie = readline("Merci de saisir votre nombre (qu'il soit positif ou négatif) $i ");
     $tab[] = $saisie;
 }
 
 $nbresPositifs = 0;
-   $nbresNégatifs = 0;
-foreach ($tab as $key => $value) {      
-   echo $key . ":" . $value;
-   if($value>=0){
-    $nbresPositifs +=1;
+$nbresNégatifs = 0;
+foreach ($tab as $key => $value) {
+    echo $key . ":" . $value;
+    if ($value >= 0) {
+        $nbresPositifs += 1;
     }
-    if($value<0){
-        $nbresNégatifs +=1;
-        }
+    if ($value < 0) {
+        $nbresNégatifs += 1;
+    }
 }
 echo "il y a $nbresPositifs nombres positif(s) et $nbresNégatifs nombres négatif(s) ";
