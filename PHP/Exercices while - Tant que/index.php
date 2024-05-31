@@ -35,16 +35,18 @@
 //           echo ++$nbre . "\n";
 //     }
 
-//     echo "";
+//     // echo "";
 
 //    4°) Vous devez écrire un programme qui calcul le PGCD de 2 nombres. 
 // PGCD = Plus Grand Diviseur Commun, s’écrit PGCD (a ; b) 
-// Vous devez demander à l’utilisateur deux nombres. 
-$nbrea = readline("Merci d'écrire un premier nombre");
-$nbreb = readline("Merci d'écrire un deuxième nombre");
-$diviseur=a;
+// // Vous devez demander à l’utilisateur deux nombres. 
+// $nbrea = readline("Merci d'écrire un premier nombre");
+// $nbreb = readline("Merci d'écrire un deuxième nombre");
+// $diviseur=a;
 
 
-While($nbre/$diviseur $nbre2/$diviseur ){
+// While($nbre/$diviseur $nbre2/$diviseur ){
 
-}
+// }
+
+
