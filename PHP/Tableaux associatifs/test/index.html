@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .barrel-roll {
+      display: inline-block;
+      animation: roll 2s infinite;
+    }
+
+    @keyframes roll {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="doABarrelRoll()">Fais un tonneau !</button>
+
+<script>
+  function doABarrelRoll() {
+    document.body.classList.toggle('barrel-roll');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    margin: 50px;
+}
+#passwordsaisie{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.invalid{
+    color: red;
+}
+
+.valid{
+    color: green;
+}
