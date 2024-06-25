@@ -1,6 +1,5 @@
-php
 <?php
-interface SeDeplacer {
+
+interface iDeplacement{
     public function seDeplacer();
 }
-?>

@@ -1,24 +1,30 @@
-php
 <?php
-require_once 'Lapin.php';
-require_once 'Chasseur.php';
 
-$lapin = new Lapin("blanc", 4);
+require_once "Lapin.class.php";
+require_once "Chasseur.class.php";
+
+
+$lapin  = new Lapin("lapin blanc",4);
 $chasseur = new Chasseur("Paul", "fusil");
 
-echo $lapin->seNourrir() . "\n";
-echo "Le chasseur {$chasseur->nom} a été créé avec un {$chasseur->arme}\n";
+//Test de la méthode getEnvie et setEnvie
+echo "Test de modification de l'état du lapin : <br>";
+echo "Initialement, le lapin est en vie " . ($lapin->estEnVie() ? 'Oui' : "Non") . "<br>";
 
-while ($lapin->estVivant()) {
-    echo $chasseur->seDeplacer() . "\n";
-    echo $lapin->crier() . "\n";
-    echo $chasseur->chasser($lapin) . "\n";
-    
-    if ($lapin->estVivant()) {
-        echo $lapin->fuir() . "\n";
-    } else {
-        echo "Le pauvre petit lapin blanc est malheureusement mort\n";
+$lapin->setEnvie(true);
+echo "Après avoir modifié l'état, le lapin est en vie " . ($lapin->estEnVie() ? 'Oui' : "Non") . "<br>";
+
+$lapin->seNourrir();
+
+while($lapin->estEnVie()){
+    $chasseur->seDeplacer();
+    $lapin->crier();
+    $chasseur->chasser($lapin);
+
+    if(!$lapin->estEnVie()){
         break;
     }
+
+    $lapin->fuir();
 }
-?>
+echo "Le prog est terminé car le lapin est mort";
